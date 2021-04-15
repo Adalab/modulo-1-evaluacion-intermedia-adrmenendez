@@ -77,4 +77,8 @@
   .banner-text {
     font-size: 40px;
   }
+
+  .logo-img {
+    margin: 0;
+  }
 }
