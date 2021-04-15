@@ -14,3 +14,67 @@
   --background-color: #3cdbc0;
   --banner-color: #ffffff;
 }
+
+/*--- HEADER ---*/
+
+.header {
+  background-color: var(--banner-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*--- LOGO ---*/
+
+.logo-img {
+  margin-top: 10px;
+  width: 155px;
+}
+
+/*--- MENU ---*/
+
+.menu {
+  padding: 10px 0 13px 0;
+}
+.menu-item {
+  padding: 0 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--menu-color);
+}
+
+/*--- BANNER ---*/
+
+.banner {
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+.banner-text {
+  font-size: 30px;
+  color: var(--banner-color);
+  text-transform: capitalize;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 30%;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .banner-text {
+    font-size: 40px;
+  }
+}
