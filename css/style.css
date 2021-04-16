@@ -23,9 +23,6 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*--- LOGO ---*/
@@ -39,9 +36,11 @@
 
 .menu {
   padding: 10px 0 13px 0;
+  display: flex;
+  flex-direction: row;
 }
 .menu-item {
-  padding: 0 10px;
+  padding: 20px 10px;
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--menu-color);
@@ -58,11 +57,9 @@
   font-size: 1.875rem;
   color: var(--banner-color);
   text-transform: capitalize;
+  word-spacing: 100vw;
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   position: relative;
   top: 30%;
 }
